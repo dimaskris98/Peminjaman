@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="D:\Kuliah\htdocs\Peminjaman\Peminjaman.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/Peminjaman/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/Peminjaman/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\controllers\Home.php"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\controllers\Welcome.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\core\Loader.php">
+			<todo name="todo	Figure out a way to move this to the constructor" pos="5;148"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\core\Output.php">
+			<todo name="todo	We need to figure out how to permit headers to be cached." pos="5;200"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_forge.php">
+			<todo name="todo	Remove deprecated $_after option in 3.1+" pos="5;556"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_query_builder.php">
+			<todo name="@todo error" pos="4;1932"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\mysqli_driver.php">
+			<todo name="todo	SSL support" pos="5;104"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_mysql_driver.php">
+			<todo name="todo	SSL support" pos="5;121"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_driver.php">
+			<todo name="todo	Implement use of SQLite3::querySingle(), if needed" pos="5;120"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_forge.php">
+			<todo name="todo	implement drop_column(), modify_column()" pos="5;134"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\sqlite_forge.php">
+			<todo name="todo	implement drop_column(), modify_column()" pos="5;115"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\helpers\date_helper.php">
+			<todo name="todo	Remove in version 3.1+." pos="5;134"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\helpers\file_helper.php">
+			<todo name="todo	Remove in version 3.1+." pos="5;58"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\helpers\security_helper.php">
+			<todo name="todo	Remove in version 3.1+." pos="5;89"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\helpers\string_helper.php">
+			<todo name="todo	Remove in version 3.1+." pos="5;64"/>
+			<todo name="todo: remove in 3.1+" pos="19;231"/>
+			<todo name="todo: remove in 3.1+" pos="20;234"/>
+			<todo name="todo	Remove in version 3.1+." pos="5;293"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\helpers\url_helper.php">
+			<todo name="todo	Remove old 'dash' and 'underscore' usage in 3.1+." pos="5;472"/>
+		</todofile>
+		<todofile name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Xmlrpc.php">
+			<todo name="@todo - this needs to be made more general purpose" pos="6;1554"/>
+		</todofile>
+	</todoblock>
+	<filescache>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\tutorial\static_pages.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\tutorial\news_section.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\tutorial\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\tutorial\create_news_items.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\tutorial\conclusion.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\mvc.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\goals.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\getting_started.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\features.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\at_a_glance.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\overview\appflow.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\zip.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\xmlrpc.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\user_agent.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\uri.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\unit_testing.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\typography.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\trackback.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\table.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\sessions.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\security.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\parser.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\pagination.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\output.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\migration.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\loader.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\language.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\javascript.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\input.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\image_lib.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\ftp.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\form_validation.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\file_uploading.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\encryption.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\encrypt.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\email.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\config.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\cart.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\calendar.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\caching.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\libraries\benchmark.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrading.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_b11.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_300.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_221.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_220.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_214.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_213.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_212.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_211.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_210.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_203.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_202.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_201.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_200.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_172.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_171.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_170.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_163.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_162.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_161.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_160.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_154.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_153.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_152.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_150.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_141.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_140.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_133.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_132.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_131.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_130.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\upgrade_120.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\troubleshooting.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\installation\downloads.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\xml_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\url_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\typography_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\text_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\string_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\smiley_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\security_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\path_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\number_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\language_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\inflector_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\html_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\form_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\file_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\email_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\download_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\directory_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\date_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\cookie_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\captcha_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\helpers\array_helper.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\welcome.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\views.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\urls.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\styleguide.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\security.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\routing.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\reserved_names.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\requirements.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\profiling.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\models.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\managing_apps.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\libraries.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\hooks.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\helpers.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\errors.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\environments.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\drivers.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\credits.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\creating_libraries.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\creating_drivers.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\core_classes.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\controllers.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\compatibility_functions.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\common_functions.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\cli.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\caching.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\autoloader.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\ancillary_classes.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\general\alternative_php.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\documentation\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\utilities.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\transactions.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\results.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\query_builder.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\queries.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\metadata.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\helpers.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\forge.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\examples.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\db_driver_reference.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\connecting.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\configuration.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\call_function.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\database\caching.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\contributing\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\js\theme.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\js\oldtheme.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\css\theme.css" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\css\badge_only.css" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\websupport.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\underscore.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\searchtools.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\pygments.css" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\jquery.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\doctools.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\_static\basic.css" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\searchindex.js" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\search.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\license.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\genindex.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\DCO.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\user_guide\changelog.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\drivers\Session_redis_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\drivers\Session_memcached_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\drivers\Session_files_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\drivers\Session_database_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\drivers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\SessionHandlerInterface.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\Session_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\Session.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Session\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Javascript\Jquery.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Javascript\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_wincache.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_redis.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_memcached.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_file.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_dummy.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\drivers\Cache_apc.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cache\Cache.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Zip.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Xmlrpcs.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Xmlrpc.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\User_agent.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Upload.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Unit_test.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Typography.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Trackback.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Table.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Profiler.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Parser.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Pagination.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Migration.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Javascript.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Image_lib.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Ftp.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Form_validation.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Encryption.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Encrypt.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Email.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Cart.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\libraries\Calendar.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\upload_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\unit_test_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\profiler_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\pagination_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\number_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\migration_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\imglib_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\ftp_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\form_validation_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\email_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\db_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\date_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\english\calendar_lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\language\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\xml_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\url_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\typography_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\text_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\string_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\smiley_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\security_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\path_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\number_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\language_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\inflector_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\html_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\form_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\file_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\email_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\download_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\directory_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\date_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\cookie_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\captcha_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\helpers\array_helper.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\fonts\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlsrv\sqlsrv_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlsrv\sqlsrv_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlsrv\sqlsrv_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlsrv\sqlsrv_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlsrv\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\sqlite3_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite3\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\sqlite_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\sqlite_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\sqlite_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\sqlite_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\sqlite\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\postgre\postgre_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\postgre\postgre_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\postgre\postgre_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\postgre\postgre_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\postgre\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_sqlsrv_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_sqlsrv_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_sqlite_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_sqlite_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_pgsql_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_pgsql_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_odbc_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_odbc_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_oci_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_oci_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_mysql_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_mysql_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_informix_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_informix_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_ibm_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_ibm_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_firebird_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_firebird_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_dblib_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_dblib_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_cubrid_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_cubrid_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_4d_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\pdo_4d_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\subdrivers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\pdo_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\pdo_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\pdo_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\pdo_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\pdo\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\odbc\odbc_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\odbc\odbc_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\odbc\odbc_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\odbc\odbc_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\odbc\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\oci8\oci8_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\oci8\oci8_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\oci8\oci8_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\oci8\oci8_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\oci8\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\mysqli_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\mysqli_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\mysqli_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\mysqli_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysqli\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysql\mysql_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysql\mysql_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysql\mysql_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysql\mysql_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mysql\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mssql\mssql_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mssql\mssql_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mssql\mssql_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mssql\mssql_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\mssql\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\ibase\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\ibase\ibase_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\ibase\ibase_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\ibase\ibase_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\ibase\ibase_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\cubrid\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\cubrid\cubrid_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\cubrid\cubrid_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\cubrid\cubrid_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\cubrid\cubrid_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\drivers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_utility.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_result.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_query_builder.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_forge.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_driver.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB_cache.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\database\DB.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\compat\standard.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\compat\password.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\compat\mbstring.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\compat\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\compat\hash.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Utf8.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\URI.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Security.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Router.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Output.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Model.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Log.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Loader.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Lang.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Input.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Hooks.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Exceptions.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Controller.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Config.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Common.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\CodeIgniter.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\core\Benchmark.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\system\.htaccess" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\error_php.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\error_general.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\error_exception.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\error_db.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\html\error_404.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\error_php.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\error_general.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\error_exception.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\error_db.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\cli\error_404.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\errors\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\welcome_message.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\views\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\third_party\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\models\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\logs\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\libraries\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\language\english\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\language\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\hooks\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\helpers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\core\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\controllers\Welcome.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\controllers\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\controllers\Home.php" crc="1525846377"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\user_agents.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\smileys.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\routes.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\profiler.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\mimes.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\migration.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\memcached.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\hooks.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\foreign_chars.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\doctypes.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\database.php" crc="1525839954"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\constants.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\config.php" crc="1525839954"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\config\autoload.php" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\cache\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\cache\.htaccess" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\index.html" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\application\.htaccess" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\license.txt" crc="1429869652"/>
+		<file name="D:\Kuliah\htdocs\Peminjaman\index.php" crc="1429869652"/>
+	</filescache>
+</project>
