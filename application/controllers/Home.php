@@ -1,11 +1,9 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Home extends CI_Controller {
-
-	public function index()
-	{
-		$this->load->view('head');
-		$this->load->view('footer');
-	}
+ public function index() {
+ $data=array('title'=>'Peminjaman Gedung',
+ 'isi' =>'home/index_home'
+ );
+ $this->load->view('layout/wrapper',$data);
+ }
 }
-
-?>
