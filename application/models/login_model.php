@@ -4,28 +4,25 @@ class login_model extends CI_Model{
   return $this->db->get_where($table,$where);
  }
  
- 
- function cari($data)
-	{
-		//$cari = $this->input->GET('cari', TRUE);
-		$query = $this->db->query("SELECT * FROM peminjaman,pengguna where peminjaman.NIM=pengguna.NIM AND Nama_Pengguna = '$data' ");
-		return $query->result();
-	}   
+ function get_data_cari($keyword){
+  $this->db->like('Nama_Pengguna', $keyword)->or_like('Nama_Gedung', $keyword); //mencari data yang serupa dengan keyword
+ $query = $this->db->query("SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung");
+		return $query->result();}
     
 	function ajukan(){
-	$query = $this->db->query("SELECT * FROM (SELECT pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'diproses'");
+	$query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'diproses'");
 		return $query->result();
 	}
 	function tolak(){
-		$query = $this->db->query("SELECT * FROM (SELECT pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'tolak'");
+		$query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'ditolak'");
 		return $query->result();
 	}
 	function setuju(){
-		$query = $this->db->query("SELECT * FROM (SELECT pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'setuju'");
+		$query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.Status = 'disetujui'");
 		return $query->result();
 	}
 	function semua(){
-		$query = $this->db->query("SELECT peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung");
+		$query = $this->db->query("SELECT peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung");
 		return $query->result();
 	}
 	function info(){
@@ -33,41 +30,22 @@ class login_model extends CI_Model{
 		return $query->result();
 	}
 	
-	
-	function get_pengguna(){
-		$query = $this->db->query("SELECT * FROM pengguna");
-		return $query->result();
-	}
-	
-	function get_pinjam(){
-		$query = $this->db->query("SELECT * FROM peminjaman");
-		return $query->result();
-	}
-	function get_gdg(){
-		$query = $this->db->query("SELECT * FROM gedung");
-		return $query->result();
-	}
-	
-	
 	function get_data_edit($id){
-		$query = $this->db->query("SELECT * FROM pengguna WHERE NIM = '$id'");
-		return $query->result_array();
+		$query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.NIM = '$id'");
+		return $query->result();
 	}
 	
-	function input($data = array()){
-		return $this->db->insert('pengguna',$data);
-		//return $this->db->update('tm_mahasiswa',$data);
-	}
 	
-	function delete($id){
-		$this->db->where('nim', $id);
-        return $this->db->delete('tm_mahasiswa');
-	}
-	
-	function update($data = array(),$id){
-		$this->db->where('nim',$id);
-		return $this->db->update('tm_mahasiswa',$data);
-	}
+	function hapus($where,$table){
+ $this->db->where($where);
+ $this->db->delete($table);
+}
+ 
+	function update($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}	
+
 	
 	
 }
