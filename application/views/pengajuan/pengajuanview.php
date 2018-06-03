@@ -47,13 +47,13 @@ background-color:#eef1f4;
     <div id="header">
         <ul>
         
-        <li><a  href = "http://localhost/CodeIgniter/menu/diajukan" rel='stylesheet' type='text/css' name="ajukan">Diajukan</a></li>
+        <li><a  href = "http://localhost/Peminjaman/menu/index" rel='stylesheet' type='text/css' name="ajukan">Diajukan</a></li>
 	
-		<li><a href = "http://localhost/CodeIgniter/menu/disetujui"  rel='stylesheet' type='text/css'>Disetujui</a></li>
+		<li><a href = "http://localhost/Peminjaman/menu/disetujui"  rel='stylesheet' type='text/css'>Disetujui</a></li>
 		
-		<li><a href = "http://localhost/CodeIgniter/menu/ditolak"  rel='stylesheet' type='text/css'>Ditolak</a></li>
+		<li><a href = "http://localhost/Peminjaman/menu/ditolak"  rel='stylesheet' type='text/css'>Ditolak</a></li>
 		
-		<li><a  href="http://localhost/CodeIgniter/menu/semua"  rel='stylesheet' type='text/css'>Semua</a></li>
+		<li><a  href="http://localhost/Peminjaman/menu/semua"  rel='stylesheet' type='text/css'>Semua</a></li>
         </ul>
     </div>
        <body style="background-color: aliceblue">      

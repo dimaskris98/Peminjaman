@@ -14,61 +14,85 @@ class menu extends CI_Controller{
     
    $this->load->view('pengajuan/pengajuanview');
 		$data['ci']= $this->login_model->ajukan();
+		//var_dump($data);
 		$this->load->view('pengajuan/diajukan',$data);
    }
-	
-	public function _remap($var){
-		if(isset($var)){
-		switch(strtolower($var)){
-		case 'ditolak':
-		$this->load->view('pengajuan/pengajuanview');
-		$data['ci']= $this->login_model->tolak();
-		$this->load->view('pengajuan/diajukan',$data);
-			break;
-			
-		case 'disetujui':
+   
+	 public function disetujui(){
+   
 		$this->load->view('pengajuan/pengajuanview');
 		$data['ci']= $this->login_model->setuju();
 		$this->load->view('pengajuan/diajukan',$data);
-			break;
-		case 'semua':
-			$this->load->view('pengajuan/pengajuanview');
-		$data['ci']= $this->login_model->semua();
-		$this->load->view('pengajuan/diajukan',$data);
-			break;
-			case 'info':
-		$this->load->view('infojadwal/list_jadwal');
-		$data['ci']= $this->login_model->info();
-		$this->load->view('infojadwal/list_jadwal',$data);
-			break;
-		default:
-			$this->index();
-			}
-		}
-		else {
-			$this->index();
-		}
-	}
-   
-   function home(){
-		if(isset($_POST['submit'])){
-			//$data = $this->Model_Mahasiswa->get_data();
-		$data = array(
-				'data'=>$this->login_model->cari($_POST['keyword'])); //dimasukkan array ex container cara 1
-		//$this->load->view('App/list_mhs',['data' => $data]);
-		$this->load->view('pengajuan/diajukan',$data); //manggil array dan variabel cara 1
-		// view jg bisa dipangil
-		}else{
-			//$data = $this->Model_Mahasiswa->get_data();
-		$data = array( 'data'=>$this->login_model->ajukan()); //dimasukkan array ex container cara 1
-		//$this->load->view('App/list_mhs',['data' => $data]);
-		$this->load->view('pengajuan/diajukan',$data); //manggil array dan variabel cara 1
-		// view jg bisa dipangil
-		}
    }
    
-   
+    public function ditolak(){
     
+		$this->load->view('pengajuan/pengajuanview');
+		$data['ci']= $this->login_model->tolak();
+		$this->load->view('pengajuan/diajukan',$data);
+   }
    
+    public function semua(){
+    $this->load->view('pengajuan/pengajuanview');
+		$data['ci']= $this->login_model->semua();
+		$this->load->view('pengajuan/diajukan',$data);
+   }
+	
+   
+   function cari(){
+$keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
+  $data['ci'] = $this->login_model->get_data_cari($keyword); //mencari data karyawan berdasarkan inputan
+  $this->load->view('pengajuan/pengajuanview');
+  $this->load->view('pengajuan/diajukan', $data); //menampilkan data yang sudah dicari
+
+   }
+   
+    function hapus($id){
+  $where = array('ID_Peminjam' => $id);
+  $this->login_model->hapus($where,'peminjaman');
+  redirect('menu/index');
+ }
+ 
+ 	 function edit(){
+ 	 	
+ 	 	$id = $this->uri->segment(3);
+		//var_dump($id);
+		//echo $id;
+		$data['ci'] = $this->login_model->get_data_edit($id);
+		$data['id'] = $id;
+     	var_dump($data);
+		$this->load->view('pengajuan/edit_pengajuan',$data);
+	}
+	
+	
+  function update(){
+		$id = $this->input->post('ID_Peminjam');
+		$idOld = $this->uri->segment(3);
+		$NIM = $this->input->post('NIM');
+		$Nama_Pengguna = $this->input->post('Nama_Pengguna');
+		$Nama_Gedung = $this->input->post('Nama_Gedung');
+		$Keperluan = $this->input->post('Keperluan');
+		$Tanggal_pinjam = $this->input->post('Tanggal_pinjam');
+		$Lama_pinjam = $this->input->post('Lama_pinjam');
+		$Status = $this->input->post('Status');
+ 
+		$data = array(
+		    'ID_Peminjam' =>$id,'NIM' =>$NIM,
+			'Keperluan' => $Keperluan,
+			'Tanggal_pinjam' =>$Tanggal_pinjam,
+			'Lama_pinjam' => $Lama_pinjam,
+			'Status' => $Status
+			);
+ 
+	$where = array(
+		'ID_Peminjam' => $id
+	);
+ 
+	$this->login_model->update($where,$data,'peminjaman');
+		redirect('menu/index');
 }
+
+
+
+	}
 ?>

@@ -3,17 +3,16 @@
 		<title>List Mahasiswa</title>
 	</head>
 	<body>
-		<p align="right"><a href="<?php echo base_url()?>menu/input">+Tambah</a></p>
-		
-		
-<form align="center" action="<?=site_url('menu/home');?>" method = "post">
+		<br>
+<form align="center" action="<?=site_url('menu/cari');?>" method = "post">
 <input type="text" name = "keyword" />
-<input type="submit" value = "submit" name="submit" />
+<input type="submit" value = "Search" name="submit" />
 </form>
 		
 		<p align="center">
 			<table border="1">
 				<tr>
+				<th>ID Peminjam</th>
 					<th>Nim</th>
 					<th>Nama</th>
 					<th>Gedung</th>
@@ -21,30 +20,31 @@
 					<th>Tanggal</th>
 					<th>Lama</th>
 					<th>Status</th>
-					<th colspan="2"></th>
+					<th colspan="2">Opsi</th>
 				</tr>
 				
-				<?php
-if( ! empty($ci)){ // Jika data pada database tidak sama dengan empty (alias ada datanya)
-  foreach($ci as $data){ // Lakukan looping pada variabel gambar dari controller
-    echo "<tr>";
-    //echo "<td>".$data->nama_file."</td>";
-	echo "<td> <center>".$data->NIM."</center></td>";
-	echo "<td> <center>".$data->Nama_Pengguna."</center></td>";
-	echo "<td> <center>".$data->Nama_Gedung."</center></td>";
-	echo "<td> <center>".$data->Keperluan."</center></td>";
-	echo "<td> <center>".$data->Tanggal_pinjam."</center></td>";
-	echo "<td> <center>".$data->Lama_pinjam."</center></td>";
-	echo "<td> <center>".$data->Status."</center></td>";
-	echo "<td><input type='button' src='".base_url("cross.jpg")."' value='delete'></td>";
-	
-    echo "</tr>";
-    
-  }
-}else{ // Jika data tidak ada
-  echo "<tr><td colspan='5'>Data tidak ada</td></tr>";
-}
-?> 
+				
+				
+				<?php 
+		foreach($ci as $data){ 
+		?>
+		<tr>
+		
+			<td><?php echo $data->ID_Peminjam ?></td>
+			<td><?php echo $data->NIM ?></td>
+			<td><?php echo $data->Nama_Pengguna ?></td>
+			<td><?php echo $data->Nama_Gedung ?></td>
+			<td><?php echo $data->Keperluan ?></td>
+			<td><?php echo $data->Tanggal_pinjam ?></td>
+			<td><?php echo $data->Lama_pinjam ?></td>
+			<td><?php echo $data->Status ?></td>
+			<td>
+			      <?php echo anchor('menu/edit/'.$data->ID_Peminjam,'Edit'); ?>
+                              <?php echo anchor('menu/hapus/'.$data->ID_Peminjam,'Hapus'); ?>
+			</td>
+		</tr>
+		<?php } ?>
+				
 			</table>
 		</p>
 	</body>
