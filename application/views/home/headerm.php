@@ -154,7 +154,7 @@
                         </li>
                         
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i>Laporan</a>
+                            <a href="<?php echo base_url()?>menu/laporan"><i class="fa fa-edit fa-fw"></i>Laporan</a>
                         </li>
                         
         </nav>

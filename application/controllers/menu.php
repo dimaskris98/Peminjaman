@@ -51,11 +51,7 @@ class menu extends CI_Controller{
 		$this->load->view('pengajuan/detail',$data);
 	}
 	
-	public function info(){
-   
-		$data['ci']= $this->login_model->info();
-		$this->load->view('pengajuan/info',$data);
-   }
+	
    
    function cari(){
 $keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
@@ -109,6 +105,22 @@ $keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input 
 	$this->login_model->update($where,$data,'peminjaman');
 		redirect('menu/index');
 }
+
+
+public function info(){
+   
+		$data['ci']= $this->login_model->info();
+		$this->load->view('pengajuan/info',$data);
+   }
+   
+   
+   public function laporan(){
+   
+		$data['ci']= $this->login_model->laporan();
+		$this->load->view('pengajuan/laporan',$data);
+   }
+
+
 
 
 

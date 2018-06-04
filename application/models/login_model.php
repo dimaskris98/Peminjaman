@@ -25,10 +25,6 @@ class login_model extends CI_Model{
 		$query = $this->db->query("SELECT peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung");
 		return $query->result();
 	}
-	function infoku(){
-		$query = $this->db->query("SELECT pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,fasilitas.Nama_Fasilitas,pengguna.Nama_Pengguna FROM pengguna,peminjaman,gedung,fasilitas where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung AND peminjaman.ID_Peminjam=detail_fasilitas.ID_Peminjam");
-		return $query->result();
-	}
 	
 	function get_data_edit($id){
 		$query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung )as a where a.ID_Peminjam = '$id'");
@@ -59,7 +55,10 @@ class login_model extends CI_Model{
 		$this->db->update($table,$data);
 	}	
 
-	
+		function laporan(){
+		$query = $this->db->query ("SELECT peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung order by peminjaman.Tanggal_pinjam asc");
+		return $query->result();
+	}
 	
 }
  
