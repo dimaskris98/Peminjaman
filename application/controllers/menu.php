@@ -38,6 +38,24 @@ class menu extends CI_Controller{
 		$this->load->view('pengajuan/diajukan',$data);
    }
 	
+	
+	function detail(){
+ 	 	
+ 	 	$id = $this->uri->segment(3);
+		//var_dump($id);
+		//echo $id;
+		$data['ci'] = $this->login_model->detail($id);
+		$data['id'] = $id;
+     	//var_dump($data);
+     	$data['cii'] = $this->login_model->detail1ist($id);
+		$this->load->view('pengajuan/detail');
+	}
+	
+	public function info(){
+   
+		$data['ci']= $this->login_model->info();
+		$this->load->view('pengajuan/info',$data);
+   }
    
    function cari(){
 $keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
@@ -60,7 +78,7 @@ $keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input 
 		//echo $id;
 		$data['ci'] = $this->login_model->get_data_edit($id);
 		$data['id'] = $id;
-     	var_dump($data);
+     	//var_dump($data);
 		$this->load->view('pengajuan/edit_pengajuan',$data);
 	}
 	

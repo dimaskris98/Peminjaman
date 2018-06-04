@@ -72,12 +72,12 @@
         <ul>
             <li><a>MENU</a></li>
             <li><a href="http://localhost/Peminjaman/menu/index"><img alt="logo" src="<?php echo base_url(); ?>assets/images/office.png" width="40" height="40"/>Pengajuan </a></li>
-            <li><a href="http://localhost/CodeIgniter/menu/info"><img src="<?php echo base_url(); ?>assets/images/calendar.png" width="40" height="40"/>Info Jadwal</a></li>
+            <li><a href="http://localhost/Peminjaman/menu/info"><img src="<?php echo base_url(); ?>assets/images/calendar.png" width="40" height="40"/>Info Jadwal</a></li>
             <li><a href="#">Master Data</a></li>
-            <li><a href="<?php echo base_url('/masterDataCR/dataPengguna'); ?>"><img alt="logo" src="office.png" width="20" height="20"/>		Data Pengguna </a></li>
-            <li><a href="<img alt="logo" src="calendar.png" />	Data Petugas</a></li>
-            <li><a href="#"><img alt="logo" src="office.png" />		Data Gedung </a></li>
-            <li><a href="#"><img alt="logo" src="calendar.png" />	Data Fasilitas</a></li>
+            <li><a href="http://localhost/Peminjaman/master/index"><img alt="logo" src="office.png" width="20" height="20"/>		Data Pengguna </a></li>
+            <li><a href="http://localhost/Peminjaman/petugas/index"><img alt="logo" src="office.png" width="20" height="20"/>	Data Petugas</a></li>
+            <li><a href="http://localhost/Peminjaman/gedung/index"><img alt="logo" src="office.png" />		Data Gedung </a></li>
+            <li><a href="http://localhost/Peminjaman/fasilitas/index"><img alt="logo" src="calendar.png" />	Data Fasilitas</a></li>
             <li><a href="CodeIgniter/laporan"><img alt="logo" src="<?php echo base_url(); ?>assets/images/check-mark.png" width="40" height="40" />Laporan</a></li>
          </ul>
        </nav>

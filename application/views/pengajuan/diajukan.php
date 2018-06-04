@@ -21,6 +21,7 @@
 					<th>Lama</th>
 					<th>Status</th>
 					<th colspan="2">Opsi</th>
+					<th>Detail</th>
 				</tr>
 				
 				
@@ -38,9 +39,13 @@
 			<td><?php echo $data->Tanggal_pinjam ?></td>
 			<td><?php echo $data->Lama_pinjam ?></td>
 			<td><?php echo $data->Status ?></td>
+			
 			<td>
 			      <?php echo anchor('menu/edit/'.$data->ID_Peminjam,'Edit'); ?>
                               <?php echo anchor('menu/hapus/'.$data->ID_Peminjam,'Hapus'); ?>
+			</td>
+			<td>
+			      <?php echo anchor('menu/detail/'.$data->ID_Peminjam,'detail'); ?>
 			</td>
 		</tr>
 		<?php } ?>
