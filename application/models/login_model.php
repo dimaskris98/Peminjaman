@@ -56,7 +56,7 @@ class login_model extends CI_Model{
 	}	
 
 		function laporan(){
-		$query = $this->db->query ("SELECT peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung order by peminjaman.Tanggal_pinjam asc");
+		$query = $this->db->query ("SELECT count(peminjaman.Keperluan)as jumlahk,peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung group by peminjaman.Tanggal_pinjam");
 		return $query->result();
 	}
 	

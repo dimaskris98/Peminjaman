@@ -20,6 +20,7 @@
 					<th>Nama Pemakai</th>
 					
 					<th>Status</th>
+					<th>Jumlah</th>
 				</tr>
 				
 				
@@ -37,6 +38,7 @@
 			
 			<td><?php echo $data->Status ?></td>
 			
+			<td><?php echo $data->jumlahk ?></td>
 		</tr>
 		<?php } ?>
 				

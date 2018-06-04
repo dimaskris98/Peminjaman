@@ -8,6 +8,7 @@ class menu extends CI_Controller{
 		$this->load->view('home/headerm');
 		
         //$this->model = $this->Model_Mahasiswa;
+       // $this->session->userdata('status') != "login";
 	}
 
    public function index(){
