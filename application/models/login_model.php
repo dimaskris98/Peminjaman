@@ -40,7 +40,7 @@ class login_model extends CI_Model{
 		return $query->result();
 	}
 	function detaillist($id){
-		$query = $this->db->query("SELECT * FROM (SELECT peminjaman.*,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,gedung.ID_Gedung FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a where a.ID_Peminjam = '$id'");
+		$query = $this->db->query("SELECT peminjaman.*,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,gedung.ID_Gedung FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung AND peminjaman.ID_Peminjam = '$id'");
 		return $query->result();
 	}
 	

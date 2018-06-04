@@ -20,7 +20,7 @@
 					<th>Tanggal</th>
 					<th>Lama</th>
 					<th>Status</th>
-					<th colspan="2">Opsi</th>
+					<th>Opsi</th>
 					<th>Detail</th>
 				</tr>
 				
