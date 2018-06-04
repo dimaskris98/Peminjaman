@@ -4,13 +4,17 @@
 	</head>
 	<body>
 		<br>
+		<div class="panel panel-default">
+                        <div class="panel-heading">
+                            </i>Info Jadwal Penyawaan gedung
+						</div>
 <form align="center" action="<?=site_url('menu/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />
 </form>
-		<h2>Info Jadwal Peminjaman Gedung</h2>
+		
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 				<th>Tanggal</th>
 					<th>Nama Gedung</th>
@@ -40,6 +44,7 @@
 		<?php } ?>
 				
 			</table>
+			</div>
 		</p>
 	</body>
 </html>

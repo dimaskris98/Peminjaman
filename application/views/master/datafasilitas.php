@@ -5,13 +5,17 @@
 	<body>
 	<p align="center"><a href="<?php echo base_url()?>fasilitas/input">+Tambah</a></p>
 		<br>
+		<div class="panel panel-default">
+                        <div class="panel-heading">
+                            </i>Data Fasilitas
+						</div>
 <form align="center" action="<?=site_url('fasilitas/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />
 </form>
 		
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 					<th>ID Fasilitas</th>
 					<th>Nama Fasilitas</th>
@@ -35,6 +39,7 @@
 		<?php } ?>
 				
 			</table>
+			</div>
 		</p>
 	</body>
 </html>

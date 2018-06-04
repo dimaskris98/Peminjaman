@@ -5,13 +5,17 @@
 	<body>
 	<p align="center"><a href="<?php echo base_url()?>gedung/input">+Tambah</a></p>
 		<br>
+		<div class="panel panel-default">
+                        <div class="panel-heading">
+                            </i>Data Gedung
+						</div>
 <form align="center" action="<?=site_url('gedung/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />
 </form>
 		
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 					<th>ID_Gedung</th>
 					<th>Nama_Gedung</th>
@@ -39,6 +43,7 @@
 		<?php } ?>
 				
 			</table>
+			</div>
 		</p>
 	</body>
 </html>
