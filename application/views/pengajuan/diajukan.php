@@ -10,7 +10,7 @@
 </form>
 		
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 				<th>ID Peminjam</th>
 					<th>Nim</th>
