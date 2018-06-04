@@ -45,10 +45,10 @@ class menu extends CI_Controller{
 		//var_dump($id);
 		//echo $id;
 		$data['ci'] = $this->login_model->detail($id);
+		$data['cii'] = $this->login_model->detaillist($id);
 		$data['id'] = $id;
      	//var_dump($data);
-     	$data['cii'] = $this->login_model->detail1ist($id);
-		$this->load->view('pengajuan/detail');
+		$this->load->view('pengajuan/detail',$data);
 	}
 	
 	public function info(){

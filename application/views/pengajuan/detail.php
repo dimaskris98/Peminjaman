@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>edit </title>
+	<title>detail </title>
 	
 </head>
 <body>
 	<center>
-		<h3>Edit Data Peminjaman</h3>
+		<h3>Detail Data Peminjaman</h3>
 		
 	</center>
 	<?php foreach($cii as $row){ ?>
 	
-	<form action="<?php echo base_url(). 'menu/update/'.$id; ?>" method="post">
 		Id Peminjam
 				
 					<input type="text" name="ID_Peminjam" value="<?php echo $row->ID_Peminjam ?>" readonly><br>
@@ -33,8 +32,6 @@
 		Tambahan
 					<input type="text" name="Tambahan" value="<?php echo $row->Tambahan ?>" readonly>
 					<br><br>
-				<input type="submit" value="Simpan">
-				</form>
 	<?php } ?>
 
 <table border="1">
