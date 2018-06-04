@@ -5,13 +5,27 @@
 	<body>
 	<p align="center"><a href="<?php echo base_url()?>master/input">+Tambah</a></p>
 		<br>
+		<div class="panel panel-default">
+                        <div class="panel-heading">
+                            </i>Data Pengguna
+						</div>
 <form align="center" action="<?=site_url('master/cari');?>" method = "post">
-<input type="text" name = "keyword" />
-<input type="submit" value = "Search" name="submit" />
+<ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
 </form>
 		
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 					<th>NIM</th>
 					<th>Nama</th>
@@ -43,6 +57,7 @@
 		<?php } ?>
 				
 			</table>
+			</div>
 		</p>
 	</body>
 </html>
