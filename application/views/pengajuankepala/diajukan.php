@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<br>
-<form align="center" action="<?=site_url('menu/cari');?>" method = "post">
+<form align="center" action="<?=site_url('menukepala/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />
 </form>
@@ -20,6 +20,7 @@
 					<th>Tanggal</th>
 					<th>Lama</th>
 					<th>Status</th>
+					<th>Opsi</th>
 					<th>Detail</th>
 				</tr>
 				
@@ -40,7 +41,11 @@
 			<td><?php echo $data->Status ?></td>
 			
 			<td>
-			      <?php echo anchor('menu/detail/'.$data->ID_Peminjam,'detail'); ?>
+			      <?php echo anchor('menukepala/edit/'.$data->ID_Peminjam,'Edit'); ?>
+                              <?php echo anchor('menukepala/hapus/'.$data->ID_Peminjam,'Hapus'); ?>
+			</td>
+			<td>
+			      <?php echo anchor('menukepala/detail/'.$data->ID_Peminjam,'detail'); ?>
 			</td>
 		</tr>
 		<?php } ?>

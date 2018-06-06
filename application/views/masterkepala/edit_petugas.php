@@ -10,7 +10,7 @@
 		
 	</center>
 	<?php foreach($ci as $row){ ?>
-	<form action="<?php echo base_url(). 'petugas/update/'.$id; ?>" method="post">
+	<form action="<?php echo base_url(). 'petugaskepala/update/'.$id; ?>" method="post">
 		<table style="margin:20px auto;">
 		
 		<tr>
@@ -36,7 +36,7 @@
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>" ></td>
+				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>"  readonly></td>
 			</tr>
 			<tr>
 				<td>Alamat</td>

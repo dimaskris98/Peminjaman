@@ -33,7 +33,7 @@ if($username == 'ciel' OR $username =='ciel2'){
 	redirect(base_url("menu"));
 }
 elseif($username == 'ali'){
-	redirect(base_url("menu1"));
+	redirect(base_url("menukepala"));
 }
    //$this->session->set_userdata($data_session);
   // redirect(base_url("menu"));

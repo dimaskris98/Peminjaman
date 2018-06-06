@@ -3,12 +3,13 @@
 		<title>List Mahasiswa</title>
 	</head>
 	<body>
+	<p align="center"><a href="<?php echo base_url()?>petugaskepala/input">+Tambah</a></p>
 		<br>
 		<div class="panel panel-default">
                         <div class="panel-heading">
                             </i>Data Petugas
 						</div>
-<form align="center" action="<?=site_url('petugas/cari');?>" method = "post">
+<form align="center" action="<?=site_url('petugaskepala/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />
 </form>
@@ -20,12 +21,9 @@
 					<th>Nama</th>
 					<th>NO HP</th>
 					<th>Jenis Kelamin</th>
-					<th>Password</th>
 					<th>Alamat</th>
 					<th colspan="2">Opsi</th>
 				</tr>
-				
-				
 				
 				<?php 
 		foreach($ci as $data){ 
@@ -36,14 +34,13 @@
 			<td><?php echo $data->Nama_Pegawai ?></td>
 			<td><?php echo $data->NoHp_Pegawai ?></td>
 			<td><?php echo $data->JK_Pegawai ?></td>
-			<td><?php echo $data->Password ?></td>
 			<td><?php echo $data->Alamat_Pegawai ?></td>
 			<td>
-			      <?php echo anchor('petugas/edit/'.$data->NIP,'Edit'); ?>
+			      <?php echo anchor('petugaskepala/edit/'.$data->NIP,'Edit'); ?>
+                              <?php echo anchor('petugaskepala/hapus/'.$data->NIP,'Hapus'); ?>
 			</td>
 		</tr>
 		<?php } ?>
-				
 			</table>
 			</div>
 		</p>
