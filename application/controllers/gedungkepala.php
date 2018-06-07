@@ -1,46 +1,47 @@
 <?php
-class gedung extends CI_Controller{
+class gedungkepala extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
 		$this->load->model('gedung_model');
-		$this->load->view('home/headerm');
+		$this->load->view('home/headerkepala');
 		
         //$this->model = $this->Model_Mahasiswa;
 	}
 	
 	 public function index(){
-	 	$id = $this->uri->segment(3);
+    $id = $this->uri->segment(3);
 	 	if(isset($id)){
 			$data['ci'] = $this->gedung_model->get_data_cari($id);
 		}else{
 			$data['ci']= $this->gedung_model->view();
 		}
+		//$data['ci']= $this->gedung_model->view();
 		//var_dump($data);
-		$this->load->view('master/datagedung',$data);
+		$this->load->view('masterkepala/datagedung',$data);
    }
 	
 	function input(){
-		$this->load->view('master/input_gedung');
+		$this->load->view('masterkepala/input_gedung');
 		 $data['ci'] = array();
     
     if($this->input->post('submit')){ 
       $this->gedung_model->save();
-      redirect ('gedung/index');
+      redirect ('gedungkepala/index');
       }
       
 	}
 	
 	function cari(){
 $keyword = $this->input->post('keyword'); 
-  redirect('gedung/index/'.$keyword.''); //mencari data  //menampilkan data yang sudah dicari
+  redirect('gedungkepala/index/'.$keyword.'');
 
    }
    
        function hapus($id){
   $where = array('ID_Gedung' => $id);
   $this->gedung_model->hapus($where,'gedung');
-  redirect('gedung/index');
+  redirect('gedungkepala/index');
  }
  
  	 function edit(){
@@ -51,7 +52,7 @@ $keyword = $this->input->post('keyword');
 		$data['ci'] = $this->gedung_model->get_data_edit($id);
 		$data['id'] = $id;
      	//var_dump($data);
-		$this->load->view('master/edit_gedung',$data);
+		$this->load->view('masterkepala/edit_gedung',$data);
 	}
 	
 	
@@ -74,7 +75,7 @@ $keyword = $this->input->post('keyword');
 	);
  
 	$this->gedung_model->update($where,$data,'gedung');
-		redirect('gedung/index');
+		redirect('gedungkepala/index');
 }
    
    

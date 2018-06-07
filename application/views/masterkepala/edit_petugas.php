@@ -6,40 +6,43 @@
 </head>
 <body>
 	<center>
-		<h3>Edit Data Pengguna</h3>
+		<h3>Edit Data PeTugas</h3>
 		
 	</center>
 	<?php foreach($ci as $row){ ?>
-	<form action="<?php echo base_url(). 'master/update/'.$id; ?>" method="post">
+	<form action="<?php echo base_url(). 'petugaskepala/update/'.$id; ?>" method="post">
 		<table style="margin:20px auto;">
 		
 		<tr>
-				<td>NIM</td>
+				<td>NIP</td>
 				<td>
-					<input type="varchar" name="NIM" value="<?php echo $row->NIM ?>" readonly>
+					<input type="varchar" name="NIP" value="<?php echo $row->NIP ?>" readonly>
 				</td>
 		
 		</tr>
 			<tr>
-				<td>Nama Pengguna</td>
+				<td>Nama Petugas</td>
 				<td>
-					<input type="char" name="nama_pengguna" value="<?php echo $row->nama_pengguna ?>" readonly>
+					<input type="char" name="Nama_Pegawai" value="<?php echo $row->Nama_Pegawai ?>" readonly>
 				</td>
 			</tr>
 			<tr>
 				<td>NO HP</td>
-				<td><input type="char" name="noHp_pengguna" value="<?php echo $row->noHp_pengguna ?>"></td>
+				<td><input type="char" name="NoHp_Pegawai" value="<?php echo $row->NoHp_Pegawai ?>"></td>
 			</tr>
 			<tr>
 				<td>Jenis Kelamin</td>
-				<td><select name="jk_pengguna">
+				<td><select name="JK_Pegawai">
                 <option value="pria">Pria</option>
                 <option value="wanita">Wanita</option></select></td>
 			</tr>
-			
+			<tr>
+				<td>Password</td>
+				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>"  readonly></td>
+			</tr>
 			<tr>
 				<td>Alamat</td>
-				<td><input type="varchar" name="alamat_pengguna" value="<?php echo $row->alamat_pengguna ?>"></td>
+				<td><input type="varchar" name="Alamat_Pegawai" value="<?php echo $row->Alamat_Pegawai ?>"></td>
 			</tr>
 			
 			<tr>

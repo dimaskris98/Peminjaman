@@ -1,10 +1,10 @@
 <?php
-class fasilitas extends CI_Controller{
+class fasilitaskepala extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
 		$this->load->model('fasilitas_model');
-		$this->load->view('home/headerm');
+		$this->load->view('home/headerkepala');
 		
         //$this->model = $this->Model_Mahasiswa;
 	}
@@ -18,29 +18,30 @@ class fasilitas extends CI_Controller{
 		}
 		//$data['ci']= $this->fasilitas_model->view();
 		//var_dump($data);
-		$this->load->view('master/datafasilitas',$data);
+		$this->load->view('masterkepala/datafasilitas',$data);
    }
 	
 	function input(){
-		$this->load->view('master/input_fasilitas');
+		$this->load->view('masterkepala/input_fasilitas');
 		 $data['ci'] = array();
     
     if($this->input->post('submit')){ 
       $this->fasilitas_model->save();
-      redirect ('fasilitas/index');
+      redirect ('fasilitaskepala/index');
       }
       
 	}
 	
 	function cari(){
 		$keyword = $this->input->post('keyword'); 
-  redirect('fasilitas/index/'.$keyword.'');
+  redirect('fasilitaskepala/index/'.$keyword.'');
+
    }
    
        function hapus($id){
   $where = array('ID_Fasilitas' => $id);
   $this->fasilitas_model->hapus($where,'fasilitas');
-  redirect('fasilitas/index');
+  redirect('fasilitaskepala/index');
  }
  
  	 function edit(){
@@ -51,7 +52,7 @@ class fasilitas extends CI_Controller{
 		$data['ci'] = $this->fasilitas_model->get_data_edit($id);
 		$data['id'] = $id;
      	//var_dump($data);
-		$this->load->view('master/edit_fasilitas',$data);
+		$this->load->view('masterkepala/edit_fasilitas',$data);
 	}
 	
 	
@@ -70,7 +71,7 @@ class fasilitas extends CI_Controller{
 	);
  
 	$this->fasilitas_model->update($where,$data,'fasilitas');
-		redirect('fasilitas/index');
+		redirect('fasilitaskepala/index');
 }
    
    

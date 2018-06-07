@@ -10,7 +10,7 @@
 		
 	</center>
 	<?php foreach($ci as $row){ ?>
-	<form action="<?php echo base_url(). 'gedung/update/'.$id; ?>" method="post">
+	<form action="<?php echo base_url(). 'gedungkepala/update/'.$id; ?>" method="post">
 		<table style="margin:20px auto;">
 		
 		<tr>
@@ -31,7 +31,7 @@
 			</tr>
 			<tr>
 				<td>NIP Petugas</td>
-				<td><input type="varchar" name="NIP" value="<?php echo $row->NIP ?>"readonly></td>
+				<td><input type="varchar" name="NIP" value="<?php echo $row->NIP ?>"></td>
 			</tr>
 			
 			<tr>

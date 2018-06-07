@@ -32,11 +32,13 @@
 			</tr>
 			<tr>
 				<td>Jenis Kelamin</td>
-				<td><input type="varchar" name="JK_Pegawai" value="<?php echo $row->JK_Pegawai ?>"></td>
+				<td><select name="JK_Pegawai">
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option></select></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>"  readonly></td>
+				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>" ></td>
 			</tr>
 			<tr>
 				<td>Alamat</td>

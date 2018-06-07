@@ -1,10 +1,10 @@
 <?php
-class petugas extends CI_Controller{
+class petugaskepala extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
 		$this->load->model('petugas_model');
-		$this->load->view('home/headerm');
+		$this->load->view('home/headerkepala');
 		
         //$this->model = $this->Model_Mahasiswa;
 	}
@@ -18,30 +18,30 @@ class petugas extends CI_Controller{
 		}
 		//$data['ci']= $this->petugas_model->view();
 		//var_dump($data);
-		$this->load->view('master/datapetugas',$data);
+		$this->load->view('masterkepala/datapetugas',$data);
    }
 	
 	function input(){
-		$this->load->view('master/input_petugas');
+		$this->load->view('masterkepala/input_petugas');
 		 $data['ci'] = array();
     
     if($this->input->post('submit')){ 
       $this->petugas_model->save();
-      redirect ('petugas/index');
+      redirect ('petugaskepala/index');
       }
       
 	}
 	
 	function cari(){
 $keyword = $this->input->post('keyword'); 
-  redirect('petugas/index/'.$keyword.'');
+  redirect('petugaskepala/index/'.$keyword.'');
 
    }
    
        function hapus($id){
   $where = array('NIP' => $id);
   $this->petugas_model->hapus($where,'pegawai');
-  redirect('petugas/index');
+  redirect('petugaskepala/index');
  }
  
  	 function edit(){
@@ -52,7 +52,7 @@ $keyword = $this->input->post('keyword');
 		$data['ci'] = $this->petugas_model->get_data_edit($id);
 		$data['id'] = $id;
      	//var_dump($data);
-		$this->load->view('master/edit_petugas',$data);
+		$this->load->view('masterkepala/edit_petugas',$data);
 	}
 	
 	
@@ -79,7 +79,7 @@ $keyword = $this->input->post('keyword');
 	);
  
 	$this->petugas_model->update($where,$data,'pegawai');
-		redirect('petugas/index');
+		redirect('petugaskepala/index');
 }
    
    

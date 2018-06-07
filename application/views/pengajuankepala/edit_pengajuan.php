@@ -10,7 +10,7 @@
 		
 	</center>
 	<?php foreach($ci as $row){ ?>
-	<form action="<?php echo base_url(). 'menu/update/'.$id; ?>" method="post">
+	<form action="<?php echo base_url(). 'menukepala/update/'.$id; ?>" method="post">
 		<table style="margin:20px auto;">
 		<tr>
 				<td>Id Peminjam</td>
@@ -46,7 +46,15 @@
 			</tr>
 			<tr>
 				<td>Status</td>
-				<td><input type="varchar" name="Status" value="<?php echo $row->Status ?>" readonly></td>
+				<td> <select name="Status">
+                <option value="diproses">Diproses</option>
+                
+                <option value="disetujui">Disetujui</option>
+                <option value="ditolak">Ditolak</option></select>
+				
+				
+				
+				</td>
 			</tr>
 			
 			<tr>

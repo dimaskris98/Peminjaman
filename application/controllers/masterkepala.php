@@ -1,10 +1,10 @@
 <?php
-class master extends CI_Controller{
+class masterkepala extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
 		$this->load->model('master_model');
-		$this->load->view('home/headerm');
+		$this->load->view('home/headerkepala');
 		
         //$this->model = $this->Model_Mahasiswa;
 	}
@@ -18,30 +18,30 @@ class master extends CI_Controller{
 		}
 		//$data['ci']= $this->master_model->view();
 		//var_dump($data);
-		$this->load->view('master/datapengguna',$data);
+		$this->load->view('masterkepala/datapengguna',$data);
    }
 	
 	function input(){
-		$this->load->view('master/input_pengguna');
+		$this->load->view('masterkepala/input_pengguna');
 		 $data['ci'] = array();
     
     if($this->input->post('submit')){ 
       $this->master_model->save();
-      redirect ('master/index');
+      redirect ('masterkepala/index');
       }
       
 	}
 	
 	function cari(){
 $keyword = $this->input->post('keyword'); 
-  redirect('master/index/'.$keyword.'');
+  redirect('masterkepala/index/'.$keyword.'');
 
    }
    
        function hapus($id){
   $where = array('NIM' => $id);
   $this->master_model->hapus($where,'pengguna');
-  redirect('master/index');
+  redirect('masterkepala/index');
  }
  
  	 function edit(){
@@ -52,7 +52,7 @@ $keyword = $this->input->post('keyword');
 		$data['ci'] = $this->master_model->get_data_edit($id);
 		$data['id'] = $id;
      	//var_dump($data);
-		$this->load->view('master/edit_pengguna',$data);
+		$this->load->view('masterkepala/edit_pengguna',$data);
 	}
 	
 	
@@ -79,7 +79,7 @@ $keyword = $this->input->post('keyword');
 	);
  
 	$this->master_model->update($where,$data,'pengguna');
-		redirect('master/index');
+		redirect('masterkepala/index');
 }
    
    
