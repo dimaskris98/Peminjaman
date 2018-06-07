@@ -32,7 +32,9 @@
 			</tr>
 			<tr>
 				<td>Jenis Kelamin</td>
-				<td><input type="varchar" name="jk_pengguna" value="<?php echo $row->jk_pengguna ?>"></td>
+				<td><select name="jk_pengguna">
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option></select></td>
 			</tr>
 			<tr>
 				<td>Password</td>
