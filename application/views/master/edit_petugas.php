@@ -36,10 +36,7 @@
                 <option value="pria">Pria</option>
                 <option value="wanita">Wanita</option></select></td>
 			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input type="varchar" name="Password" value="<?php echo $row->Password ?>" ></td>
-			</tr>
+			
 			<tr>
 				<td>Alamat</td>
 				<td><input type="varchar" name="Alamat_Pegawai" value="<?php echo $row->Alamat_Pegawai ?>"></td>

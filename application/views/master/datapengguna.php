@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>List Mahasiswa</title>
+		<title>List Pengguna</title>
 	</head>
 	<body>
 	
@@ -22,7 +22,6 @@
 					<th style="text-align:center">Nama</th>
 					<th style="text-align:center">NO HP</th>
 					<th style="text-align:center">Jenis Kelamin</th>
-					<th style="text-align:center">Password</th>
 					<th style="text-align:center">Alamat</th>
 					<th colspan="2" style="text-align:center">Opsi</th>
 				</tr>
@@ -39,7 +38,6 @@
 			<td style="text-align:center"><?php echo $data->nama_pengguna ?></td>
 			<td style="text-align:center"><?php echo $data->noHp_pengguna ?></td>
 			<td style="text-align:center"><?php echo $data->jk_pengguna ?></td>
-			<td style="text-align:center"><?php echo $data->password ?></td>
 			<td style="text-align:center"><?php echo $data->alamat_pengguna ?></td>
 			<td style="text-align:center">
 			      <?php echo anchor('master/edit/'.$data->NIM,'Edit'); ?>

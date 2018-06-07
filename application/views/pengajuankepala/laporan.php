@@ -4,10 +4,7 @@
 	</head>
 	<body>
 		<br>
-<form align="center" action="<?=site_url('menu/cari');?>" method = "post">
-<input type="text" name = "keyword" />
-<input type="submit" value = "Search" name="submit" />
-</form>
+
 		<h2>Laporan Peminjaman Gedung</h2>
 		<p align="center">
 			<table border="1">

@@ -4,7 +4,6 @@
 	</head>
 	<body>
 	<br>
-	<p align="center"><a href="<?php echo base_url()?>petugas/input">+Tambah</a></p>
 		<br>
 		<div class="panel panel-default">
                         <div class="panel-heading">
@@ -23,7 +22,6 @@
 					<th style="text-align:center">Nama</th>
 					<th style="text-align:center">NO HP</th>
 					<th style="text-align:center">Jenis Kelamin</th>
-					<th style="text-align:center">Password</th>
 					<th style="text-align:center">Alamat</th>
 					<th colspan="2" style="text-align:center">Opsi</th>
 				</tr>
@@ -39,7 +37,6 @@
 			<td style="text-align:center"><?php echo $data->Nama_Pegawai ?></td>
 			<td style="text-align:center"><?php echo $data->NoHp_Pegawai ?></td>
 			<td style="text-align:center"><?php echo $data->JK_Pegawai ?></td>
-			<td style="text-align:center"><?php echo $data->Password ?></td>
 			<td style="text-align:center"><?php echo $data->Alamat_Pegawai ?></td>
 			<td style="text-align:center">
 			      <?php echo anchor('petugas/edit/'.$data->NIP,'Edit'); ?>

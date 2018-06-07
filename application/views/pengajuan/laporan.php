@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Info</title>
+		<title>Laporan</title>
 	</head>
 	<body>
 	<div class="panel panel-default">
@@ -8,11 +8,9 @@
                             </i>Laporan Peminjaman Gedung
 						</div>
 		<br>
-<form align="center" action="<?=site_url('menu/cari');?>" method = "post">
-<input type="text" name = "keyword" />
-<input type="submit" value = "Search" name="submit" />
+
 <a href="laporan"><button onclick="window.print();">Print</button></a>
-</form>
+
 		
 		<p align="center">
 			<table class="table table-striped">

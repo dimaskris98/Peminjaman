@@ -4,7 +4,6 @@
 	</head>
 	<body>
 	<br>
-	<p align="center"><a href="<?php echo base_url()?>gedung/input">+Tambah</a></p>
 		<br>
 		<div class="panel panel-default">
                         <div class="panel-heading">

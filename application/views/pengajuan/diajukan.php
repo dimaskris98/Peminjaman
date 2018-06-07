@@ -20,7 +20,6 @@
 					<th style="text-align:center">Tanggal</th>
 					<th style="text-align:center">Lama</th>
 					<th style="text-align:center">Status</th>
-					<th style="text-align:center">Opsi</th>
 					<th style="text-align:center">Detail</th>
 				</tr>
 				
@@ -40,10 +39,7 @@
 			<td style="text-align:center"><?php echo $data->Lama_pinjam ?></td>
 			<td style="text-align:center"><?php echo $data->Status ?></td>
 			
-			<td style="text-align:center">
-			      <?php echo anchor('menu/edit/'.$data->ID_Peminjam,'Edit'); ?>
-                              <?php echo anchor('menu/hapus/'.$data->ID_Peminjam,'Hapus'); ?>
-			</td>
+			
 			<td style="text-align:center">
 			      <?php echo anchor('menu/detail/'.$data->ID_Peminjam,'detail'); ?>
 			</td>
