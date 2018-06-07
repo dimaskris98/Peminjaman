@@ -8,6 +8,7 @@
                         <div class="panel-heading">
                             </i>Info Jadwal Penyawaan gedung
 						</div>
+						<br>
 <form align="center" action="<?=site_url('menu/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />

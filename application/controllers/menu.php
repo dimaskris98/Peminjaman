@@ -15,7 +15,8 @@ class menu extends CI_Controller{
 	}
 
    public function index(){
-    $this->load->view('pengajuan/pengajuanview');
+	   $judul['mode'] = "Diajukan";
+    $this->load->view('pengajuan/pengajuanview',$judul);
     $id = $this->uri->segment(3);
 	 	if(isset($id)){
 			$data['ci'] = $this->login_model->get_data_cari($id);
@@ -30,20 +31,22 @@ class menu extends CI_Controller{
    }
    
 	 public function disetujui(){
-		$this->load->view('pengajuan/pengajuanview');
+		 $judul['mode'] = "Disetujui";
+		$this->load->view('pengajuan/pengajuanview',$judul);
 		$data['ci']= $this->login_model->setuju();
 		$this->load->view('pengajuan/diajukan',$data);
    }
    
     public function ditolak(){
-    
-		$this->load->view('pengajuan/pengajuanview');
+    $judul['mode'] = "Ditolak";
+		$this->load->view('pengajuan/pengajuanview',$judul);
 		$data['ci']= $this->login_model->tolak();
 		$this->load->view('pengajuan/diajukan',$data);
    }
    
     public function semua(){
-    $this->load->view('pengajuan/pengajuanview');
+		$judul['mode'] = "Semua";
+    $this->load->view('pengajuan/pengajuanview',$judul);
 		$data['ci']= $this->login_model->semua();
 		$this->load->view('pengajuan/diajukan',$data);
    }

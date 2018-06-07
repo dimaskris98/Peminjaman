@@ -7,7 +7,7 @@
 		<br>
 		<div class="panel panel-default">
                         <div class="panel-heading">
-                            </i>Data Pengguna
+                            Data Pengguna
 						</div>
 						<br>
 <form align="center" action="<?=site_url('master/cari');?>" method = "post">
