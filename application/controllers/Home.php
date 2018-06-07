@@ -29,10 +29,10 @@ class Home extends CI_Controller {
     'Nama_Pegawai' => $username,
     'status' => "login");
     
-if($username != 'Ali'){
+if($username !== 'ali'){
 	redirect(base_url("menu"));
 }
-elseif($username == 'Ali'){
+elseif($username == 'ali'){
 	redirect(base_url("menukepala"));
 }
    //$this->session->set_userdata($data_session);
