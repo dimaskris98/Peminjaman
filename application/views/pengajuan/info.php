@@ -16,13 +16,13 @@
 		<p align="center">
 			<table class="table table-striped">
 				<tr>
-				<th>Tanggal</th>
-					<th>Nama Gedung</th>
-					<th>Pukul</th>
-					<th>Acara</th>
-					<th>Fasilitas</th>
-					<th>Nama Pemakai</th>
-					<th>Status</th>
+				<th style="text-align:center">Tanggal</th>
+					<th style="text-align:center">Nama Gedung</th>
+					<th style="text-align:center">Pukul</th>
+					<th style="text-align:center">Acara</th>
+					<th style="text-align:center">Fasilitas</th>
+					<th style="text-align:center">Nama Pemakai</th>
+					<th style="text-align:center">Status</th>
 				</tr>
 				
 				
@@ -32,13 +32,13 @@
 		?>
 		<tr>
 		
-			<td><?php echo $data->Tanggal_pinjam ?></td>
-			<td><?php echo $data->Nama_Gedung?></td>
-			<td><?php echo $data->Lama_pinjam ?></td>
-			<td><?php echo $data->Keperluan ?></td>
-			<td><?php echo $data->Nama_Fasilitas ?></td>
-			<td><?php echo $data->Nama_Pengguna ?></td>
-			<td><?php echo $data->Status ?></td>
+			<td style="text-align:center"><?php echo $data->Tanggal_pinjam ?></td>
+			<td style="text-align:center"><?php echo $data->Nama_Gedung?></td>
+			<td style="text-align:center"><?php echo $data->Lama_pinjam ?></td>
+			<td style="text-align:center"><?php echo $data->Keperluan ?></td>
+			<td style="text-align:center"><?php echo $data->Nama_Fasilitas ?></td>
+			<td style="text-align:center"><?php echo $data->Nama_Pengguna ?></td>
+			<td style="text-align:center"><?php echo $data->Status ?></td>
 			
 		</tr>
 		<?php } ?>

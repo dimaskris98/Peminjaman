@@ -12,16 +12,16 @@
 		<p align="center">
 			<table class="table table-striped">
 				<tr>
-				<th>ID Peminjam</th>
-					<th>Nim</th>
-					<th>Nama</th>
-					<th>Gedung</th>
-					<th>Keperluan</th>
-					<th>Tanggal</th>
-					<th>Lama</th>
-					<th>Status</th>
-					<th>Opsi</th>
-					<th>Detail</th>
+				<th style="text-align:center">ID Peminjam</th>
+					<th style="text-align:center">Nim</th>
+					<th style="text-align:center">Nama</th>
+					<th style="text-align:center">Gedung</th>
+					<th style="text-align:center">Keperluan</th>
+					<th style="text-align:center">Tanggal</th>
+					<th style="text-align:center">Lama</th>
+					<th style="text-align:center">Status</th>
+					<th style="text-align:center">Opsi</th>
+					<th style="text-align:center">Detail</th>
 				</tr>
 				
 				
@@ -31,20 +31,20 @@
 		?>
 		<tr>
 		
-			<td><?php echo $data->ID_Peminjam ?></td>
-			<td><?php echo $data->NIM ?></td>
-			<td><?php echo $data->Nama_Pengguna ?></td>
-			<td><?php echo $data->Nama_Gedung ?></td>
-			<td><?php echo $data->Keperluan ?></td>
-			<td><?php echo $data->Tanggal_pinjam ?></td>
-			<td><?php echo $data->Lama_pinjam ?></td>
-			<td><?php echo $data->Status ?></td>
+			<td style="text-align:center"><?php echo $data->ID_Peminjam ?></td>
+			<td style="text-align:center"><?php echo $data->NIM ?></td>
+			<td style="text-align:center"><?php echo $data->Nama_Pengguna ?></td>
+			<td style="text-align:center"><?php echo $data->Nama_Gedung ?></td>
+			<td style="text-align:center"><?php echo $data->Keperluan ?></td>
+			<td style="text-align:center"><?php echo $data->Tanggal_pinjam ?></td>
+			<td style="text-align:center"><?php echo $data->Lama_pinjam ?></td>
+			<td style="text-align:center"><?php echo $data->Status ?></td>
 			
-			<td>
+			<td style="text-align:center">
 			      <?php echo anchor('menu/edit/'.$data->ID_Peminjam,'Edit'); ?>
                               <?php echo anchor('menu/hapus/'.$data->ID_Peminjam,'Hapus'); ?>
 			</td>
-			<td>
+			<td style="text-align:center">
 			      <?php echo anchor('menu/detail/'.$data->ID_Peminjam,'detail'); ?>
 			</td>
 		</tr>

@@ -6,7 +6,10 @@ class menu extends CI_Controller{
 		$this->load->helper(array('url'));
 		$this->load->model('login_model');
 		$this->load->view('home/headerm');
-		
+		$this->load->helper(array('form', 'url'));  
+		$this->load->library(array('session', 'form_validation', 'email'));   
+		$this->load->database();  
+		$this->load->model('user_model');
         //$this->model = $this->Model_Mahasiswa;
 	}
 
@@ -119,10 +122,5 @@ public function info(){
 		$data['ci']= $this->login_model->laporan();
 		$this->load->view('pengajuan/laporan',$data);
    }
-
-
-
-
-
 	}
-?>
+	?>
