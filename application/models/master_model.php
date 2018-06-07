@@ -5,7 +5,7 @@ class master_model extends CI_Model{
   }
 	
 	 function get_data_cari($keyword){
- 	 $this->db->like('NIM', $keyword)->or_like('nama_pengguna', $keyword); //mencari data yang serupa dengan keyword
+ 	 $this->db->like('NIM', $keyword)->or_like('Nama_Pengguna', $keyword); //mencari data yang serupa dengan keyword
 	return $this->db->get('pengguna')->result();
 	}
 	

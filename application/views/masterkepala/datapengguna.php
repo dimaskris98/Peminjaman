@@ -9,18 +9,8 @@
                             </i>Data Pengguna
 						</div>
 <form align="center" action="<?=site_url('masterkepala/cari');?>" method = "post">
-<ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
+<input type="text" name = "keyword" />
+<input type="submit" value = "Search" name="submit" />
 </form>
 		
 		<p align="center">

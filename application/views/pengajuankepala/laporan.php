@@ -20,7 +20,7 @@
 					<th>Nama Pemakai</th>
 					
 					<th>Status</th>
-					<th>Jumlah</th>
+					<th>NIP</th>
 				</tr>
 				
 				
@@ -38,7 +38,7 @@
 			
 			<td><?php echo $data->Status ?></td>
 			
-			<td><?php echo $data->jumlahk ?></td>
+			<td><?php echo $data->NIP ?></td>
 		</tr>
 		<?php } ?>
 				

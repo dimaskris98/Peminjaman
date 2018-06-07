@@ -10,8 +10,13 @@ class fasilitaskepala extends CI_Controller{
 	}
 	
 	 public function index(){
-    
-		$data['ci']= $this->fasilitas_model->view();
+    $id = $this->uri->segment(3);
+	 	if(isset($id)){
+			$data['ci'] = $this->fasilitas_model->get_data_cari($id);
+		}else{
+			$data['ci']= $this->fasilitas_model->view();
+		}
+		//$data['ci']= $this->fasilitas_model->view();
 		//var_dump($data);
 		$this->load->view('masterkepala/datafasilitas',$data);
    }
@@ -28,9 +33,8 @@ class fasilitaskepala extends CI_Controller{
 	}
 	
 	function cari(){
-$keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
-  $data['ci'] = $this->fasilitas_model->get_data_cari($keyword); //mencari data 
-  $this->load->view('masterkepala/datafasilitas', $data); //menampilkan data yang sudah dicari
+		$keyword = $this->input->post('keyword'); 
+  redirect('fasilitaskepala/index/'.$keyword.'');
 
    }
    

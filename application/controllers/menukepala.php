@@ -12,9 +12,16 @@ class menukepala extends CI_Controller{
 	}
 
    public function index(){
-    
+   	
    $this->load->view('pengajuankepala/pengajuanview');
-		$data['ci']= $this->login_model->ajukan();
+     $id = $this->uri->segment(3);
+	 	if(isset($id)){
+			$data['ci'] = $this->login_model->get_data_cari($id);
+		}else{
+			$data['ci']= $this->login_model->ajukan();
+		}
+  // $this->load->view('pengajuankepala/pengajuanview');
+	//	$data['ci']= $this->login_model->ajukan();
 		//var_dump($data);
 		$this->load->view('pengajuankepala/diajukan',$data);
    }
@@ -54,10 +61,8 @@ class menukepala extends CI_Controller{
 	
    
    function cari(){
-$keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
-  $data['ci'] = $this->login_model->get_data_cari($keyword); //mencari data karyawan berdasarkan inputan
-  $this->load->view('pengajuankepala/pengajuanview');
-  $this->load->view('pengajuankepala/diajukan', $data); //menampilkan data yang sudah dicari
+$keyword = $this->input->post('keyword'); 
+  redirect('menukepala/index/'.$keyword.'');
 
    }
    

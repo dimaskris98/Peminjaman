@@ -6,7 +6,7 @@ class login_model extends CI_Model{
  
  function get_data_cari($keyword){
   $this->db->like('Nama_Pengguna', $keyword)->or_like('Nama_Gedung', $keyword); //mencari data yang serupa dengan keyword
- $query = $this->db->query("SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung");
+ $query = $this->db->query("SELECT * FROM (SELECT peminjaman.ID_Peminjam,pengguna.NIM,pengguna.Nama_Pengguna,gedung.Nama_Gedung,peminjaman.Keperluan,peminjaman.Tanggal_pinjam,peminjaman.Lama_pinjam,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung)as a WHERE a.Nama_Pengguna LIKE '%$keyword%' OR a.Nama_Gedung LIKE '%$keyword%' ");
 		return $query->result();}
     
 	function ajukan(){
@@ -56,7 +56,7 @@ class login_model extends CI_Model{
 	}	
 
 		function laporan(){
-		$query = $this->db->query ("SELECT count(peminjaman.Keperluan)as jumlahk,peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung group by peminjaman.Tanggal_pinjam");
+		$query = $this->db->query ("SELECT gedung.NIP,peminjaman.ID_Peminjam,peminjaman.Tanggal_pinjam,gedung.Nama_Gedung,peminjaman.Lama_pinjam,peminjaman.Keperluan,pengguna.NIM,pengguna.Nama_Pengguna,peminjaman.Status FROM pengguna,peminjaman,gedung where pengguna.NIM = peminjaman.NIM AND peminjaman.ID_Gedung=gedung.ID_Gedung order by peminjaman.Tanggal_pinjam asc");
 		return $query->result();
 	}
 	

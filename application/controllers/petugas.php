@@ -10,8 +10,13 @@ class petugas extends CI_Controller{
 	}
 	
 	 public function index(){
-    
-		$data['ci']= $this->petugas_model->view();
+    $id = $this->uri->segment(3);
+	 	if(isset($id)){
+			$data['ci'] = $this->petugas_model->get_data_cari($id);
+		}else{
+			$data['ci']= $this->petugas_model->view();
+		}
+		//$data['ci']= $this->petugas_model->view();
 		//var_dump($data);
 		$this->load->view('master/datapetugas',$data);
    }
@@ -28,9 +33,8 @@ class petugas extends CI_Controller{
 	}
 	
 	function cari(){
-$keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
-  $data['ci'] = $this->petugas_model->get_data_cari($keyword); //mencari data 
-  $this->load->view('master/datapetugas', $data); //menampilkan data yang sudah dicari
+$keyword = $this->input->post('keyword'); 
+  redirect('petugas/index/'.$keyword.'');
 
    }
    

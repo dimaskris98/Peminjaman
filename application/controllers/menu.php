@@ -12,9 +12,16 @@ class menu extends CI_Controller{
 	}
 
    public function index(){
+    $this->load->view('pengajuan/pengajuanview');
+    $id = $this->uri->segment(3);
+	 	if(isset($id)){
+			$data['ci'] = $this->login_model->get_data_cari($id);
+		}else{
+			$data['ci']= $this->login_model->ajukan();
+		}
     
-   $this->load->view('pengajuan/pengajuanview');
-		$data['ci']= $this->login_model->ajukan();
+   //$this->load->view('pengajuan/pengajuanview');
+	//	$data['ci']= $this->login_model->ajukan();
 		//var_dump($data);
 		$this->load->view('pengajuan/diajukan',$data);
    }
@@ -54,10 +61,8 @@ class menu extends CI_Controller{
 	
    
    function cari(){
-$keyword = $this->input->get('submit', TRUE); //mengambil nilai dari form input cari
-  $data['ci'] = $this->login_model->get_data_cari($keyword); //mencari data karyawan berdasarkan inputan
-  $this->load->view('pengajuan/pengajuanview');
-  $this->load->view('pengajuan/diajukan', $data); //menampilkan data yang sudah dicari
+$keyword = $this->input->post('keyword'); 
+  redirect('menu/index/'.$keyword.'');
 
    }
    
