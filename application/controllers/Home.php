@@ -29,7 +29,7 @@ class Home extends CI_Controller {
     'Nama_Pegawai' => $username,
     'status' => "login");
     
-if($username == 'pegawaiGor' OR $username =='pegawaiAula'){
+if($username != 'ali'){
 	redirect(base_url("menu"));
 }
 elseif($username == 'ali'){
