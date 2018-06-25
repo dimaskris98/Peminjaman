@@ -49,29 +49,28 @@ class menukepala extends CI_Controller{
    
    
    public function laporan(){
-   	
-   $this->load->view('pengajuankepala/laporan');
-	 	if(isset($_GET['keyword']) AND isset($_GET['keyword2'])){
+   	$data['ci']= $this->login_model->laporan();
+   	$this->load->view('pengajuankepala/laporan',$data);
+	 	
+   }
+   
+ function carilaporan(){
+ 	
+ 	
+ 	if(isset($_GET['keyword']) AND isset($_GET['keyword2'])){
 	 		$keyword=$_GET['keyword'];
-	 		$keyword2=$_GET['keyword2']
+	 		$keyword2=$_GET['keyword2'];
 	 		$data ['ci']= $this->login_model->data_cari($keyword,$keyword2);
 	 		
-	 		
-			//$data['ci'] = $this->login_model->data_cari($id);
 		}else{
 			$data['ci']= $this->login_model->laporan();
+			
 		}
  
 		$this->load->view('pengajuankepala/laporan',$data);
-   }
 
 
 
-function carilaporan(){
-$keyword = $this->input->post('keyword'); 
-
-$keyword2 = $this->input->post('keyword2'); 
-  redirect('menukepala/laporan/'.$keyword.','.$keyword2'');
 
    }
    

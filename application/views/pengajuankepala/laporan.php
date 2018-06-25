@@ -19,7 +19,7 @@
 		<br>
 
 
-<form align="center" action="<?=site_url('menukepala/laporan');?>" method = "get">
+<form align="center" action="<?=site_url('menukepala/carilaporan');?>" method = "get">
 <select name="keyword">
                 <option value="01">Januari</option>
                 <option value="02">Februari</option>
@@ -44,16 +44,7 @@
 <input type="submit" value = "Search" name="submit" />
 </form>
 <br>
-<form align="center" action="<?=site_url('menukepala/carilaporan');?>" method = "post">
-<select name="keyword">
 
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                </select>
-<input type="submit" value = "Search" name="submit" />
-</form>
 
 <br>
 
