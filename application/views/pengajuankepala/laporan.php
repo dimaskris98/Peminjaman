@@ -1,13 +1,17 @@
 <html>
 	<head>
 		<title>Info</title>
+		<br>
+		<div class="panel panel-default">
+                        <div class="panel-heading">
+                            </i>Laporan Peminjaman Gedung
+						</div>
+		<br>
 	</head>
 	<body>
-		<br>
-
-		<h2>Laporan Peminjaman Gedung</h2>
+	
 		<p align="center">
-			<table border="1">
+			<table class="table table-striped">
 				<tr>
 				<th>Tanggal</th>
 				<th>Pukul</th>
@@ -38,7 +42,7 @@
 			<td><?php echo $data->NIP ?></td>
 		</tr>
 		<?php } ?>
-				
+				<p align="center">
 				<a href="laporan"><button onclick="window.print();">Print</button></a>
 				<br><br>
 			</table>

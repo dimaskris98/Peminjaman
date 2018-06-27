@@ -5,6 +5,7 @@
 	
 </head>
 <body>
+<br>
 	<center>
 		<h3>Edit Data PeTugas</h3>
 		
@@ -15,20 +16,26 @@
 		
 		<tr>
 				<td>NIP</td>
-				<td>
-					<input type="varchar" name="NIP" value="<?php echo $row->NIP ?>" readonly>
+				<td><input class="form-control separuh" placeholder="NIP" type="varchar" name="NIP" value="<?php echo $row->NIP ?>" autofocus>
+					
+			<br>
 				</td>
 		
 		</tr>
 			<tr>
 				<td>Nama Petugas</td>
-				<td>
-					<input type="char" name="Nama_Pegawai" value="<?php echo $row->Nama_Pegawai ?>" readonly>
+				<td><input class="form-control separuh" placeholder="Nama_Pegawai" type="varchar" name="Nama_Pegawai" value="<?php echo $row->Nama_Pegawai ?>" autofocus>
+					
+			<br>
+				
 				</td>
 			</tr>
 			<tr>
 				<td>NO HP</td>
-				<td><input type="char" name="NoHp_Pegawai" value="<?php echo $row->NoHp_Pegawai ?>"></td>
+				<td><input class="form-control separuh" placeholder="NoHp_Pegawai" type="varchar" name="NoHp_Pegawai" value="<?php echo $row->NoHp_Pegawai ?>" autofocus>
+					
+			<br>
+				
 			</tr>
 			<tr>
 				<td>Jenis Kelamin</td>
@@ -39,7 +46,10 @@
 			
 			<tr>
 				<td>Alamat</td>
-				<td><input type="varchar" name="Alamat_Pegawai" value="<?php echo $row->Alamat_Pegawai ?>"></td>
+				<td><input class="form-control separuh" placeholder="Alamat_Pegawai" type="varchar" name="Alamat_Pegawai" value="<?php echo $row->Alamat_Pegawai ?>" autofocus>
+					
+			<br>
+				
 			</tr>
 			
 			<tr>
@@ -51,14 +61,5 @@
 	<?php } ?>
 
 </body>
-<footer>
-    <div id="footer_bottom" class="footer-bottom footer">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="copyright">2014 © <a href="#">FormGet.com</a> All rights reserved.</div>
-</div>
-</div>
-</div>
-      </footer>
+
 </html>

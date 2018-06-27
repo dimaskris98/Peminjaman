@@ -12,8 +12,8 @@ class menukepala extends CI_Controller{
 	}
 
    public function index(){
-   	
-   $this->load->view('pengajuankepala/pengajuanview');
+   	$judul['mode'] = "Diajukan";
+   $this->load->view('pengajuankepala/pengajuanview',$judul);
      $id = $this->uri->segment(3);
 	 	if(isset($id)){
 			$data['ci'] = $this->login_model->get_data_cari($id);
@@ -27,20 +27,22 @@ class menukepala extends CI_Controller{
    }
    
 	 public function disetujui(){
-		$this->load->view('pengajuankepala/pengajuanview');
+		 $judul['mode'] = "Disetujui";
+		$this->load->view('pengajuankepala/pengajuanview',$judul);
 		$data['ci']= $this->login_model->setuju();
 		$this->load->view('pengajuankepala/diajukan',$data);
    }
    
     public function ditolak(){
-    
-		$this->load->view('pengajuankepala/pengajuanview');
+    $judul['mode'] = "Ditolak";
+		$this->load->view('pengajuankepala/pengajuanview',$judul);
 		$data['ci']= $this->login_model->tolak();
 		$this->load->view('pengajuankepala/diajukan',$data);
    }
    
     public function semua(){
-    $this->load->view('pengajuankepala/pengajuanview');
+		$judul['mode'] = "Semua";
+    $this->load->view('pengajuankepala/pengajuanview',$judul);
 		$data['ci']= $this->login_model->semua();
 		$this->load->view('pengajuankepala/diajukan',$data);
    }

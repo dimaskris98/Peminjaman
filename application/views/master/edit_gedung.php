@@ -5,6 +5,7 @@
 	
 </head>
 <body>
+<br>
 	<center>
 		<h3>Edit Data Pengguna</h3>
 		
@@ -15,23 +16,30 @@
 		
 		<tr>
 				<td>ID_Gedung</td>
-				<td>
-					<input type="varchar" name="ID_Gedung" value="<?php echo $row->ID_Gedung ?>" readonly>
+				<td><input class="form-control separuh" placeholder="ID_Gedung" type="varchar" name="ID_Gedung" value="<?php echo $row->ID_Gedung ?>" autofocus>
+					
+			<br>
 				</td>
 		
 		</tr>
 			
 			<tr>
 				<td>Nama_Gedung</td>
-				<td><input type="varchar" name="Nama_Gedung" value="<?php echo $row->Nama_Gedung ?>"></td>
+				<td><input class="form-control separuh" placeholder="Nama_Gedung" type="varchar" name="Nama_Gedung" value="<?php echo $row->Nama_Gedung ?>" autofocus>
+					
+			<br>
 			</tr>
 			<tr>
 				<td>Deskripsi</td>
-				<td><input type="varchar" name="Deskripsi" value="<?php echo $row->Deskripsi ?>" ></td>
+				<td><input class="form-control separuh" placeholder="Deskripsi" type="varchar" name="Deskripsi" value="<?php echo $row->Deskripsi ?>" autofocus>
+					
+			<br>
 			</tr>
 			<tr>
 				<td>NIP Petugas</td>
-				<td><input type="varchar" name="NIP" value="<?php echo $row->NIP ?>"readonly></td>
+				<td><input class="form-control separuh" placeholder="NIP" type="varchar" name="NIP" value="<?php echo $row->NIP ?>" autofocus>
+					
+			<br>
 			</tr>
 			
 			<tr>
@@ -43,14 +51,5 @@
 	<?php } ?>
 
 </body>
-<footer>
-    <div id="footer_bottom" class="footer-bottom footer">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="copyright">2014 © <a href="#">FormGet.com</a> All rights reserved.</div>
-</div>
-</div>
-</div>
-      </footer>
+
 </html>

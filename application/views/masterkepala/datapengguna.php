@@ -8,6 +8,7 @@
                         <div class="panel-heading">
                             </i>Data Pengguna
 						</div>
+						<br>
 <form align="center" action="<?=site_url('masterkepala/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />

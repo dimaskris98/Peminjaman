@@ -2,39 +2,77 @@
 <html>
 <head>
 	<title>detail </title>
+	<style>
+			.separuh {
+				width : 30%;
+			}
+		</style>
 	
 </head>
 <body>
+<br>
 	<center>
 		<h3>Detail Data Peminjaman</h3>
 		
 	</center>
 	<?php foreach($cii as $row){ ?>
 	
-		Id Peminjam
+		<tr>
+				<td>Id Peminjam</td>
+				<td>
+					<input class="form-control separuh" placeholder="ID_Peminjam" type="varchar" name="ID_Peminjam" value="<?php echo $row->ID_Peminjam ?>" autofocus>
+					
+			<br>
+				</td>
+		
+		</tr>
+		<tr>
+				<td>NIM</td>
+				<td><input class="form-control separuh" placeholder="NIM" type="varchar" name="NIM" value="<?php echo $row->NIM ?>" autofocus>
+					
+			<br>
+				</td>
+		
+		</tr>
+			<tr>
+				<td>Nama Pengguna</td>
 				
-					<input type="text" name="ID_Peminjam" value="<?php echo $row->ID_Peminjam ?>" readonly><br>
-				
-		NIM
-					<input type="text" name="NIM" value="<?php echo $row->NIM ?>" readonly><br>
-		Nama Pengguna
-					<input type="text" name="Nama_Pengguna" value="<?php echo $row->Nama_Pengguna ?>" readonly><br>
-		Nama Gedung
-					<input type="text" name="Nama_Gedung" value="<?php echo $row->Nama_Gedung ?>" readonly><br>
-		Keperluan
-					<input type="text" name="Keperluan" value="<?php echo $row->Keperluan ?>"readonly><br>
-		Tanggal Pinjam
-					<input type="text" name="Tanggal_pinjam" value="<?php echo $row->Tanggal_pinjam ?>"readonly><br>
-		Lama Pinjam
-					<input type="text" name="Lama_pinjam" value="<?php echo $row->Lama_pinjam ?>"readonly><br>
+				<td><input class="form-control separuh" placeholder="Nama Pengguna" type="varchar" name="Nama Pengguna" value="<?php echo $row->Nama_Pengguna ?>" autofocus>
+					
+			<br>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>Keperluan</td>
+				<td><input class="form-control separuh" placeholder="Keperluan" type="varchar" name="Keperluan" value="<?php echo $row->Keperluan ?>" autofocus>
+					
+			<br>
+			</tr>
+			<tr>
+				<td>Tanggal Pinjam</td>
+				<td><input class="form-control separuh" placeholder="Tanggal Pinjam" type="varchar" name="Tanggal Pinjam" value="<?php echo $row->Tanggal_pinjam ?>" autofocus>
+					
+			<br>
+			</tr>
+			<tr>
+				<td>Lama Pinjam</td>
+				<td><input class="form-control separuh" placeholder="Lama Pinjam" type="varchar" name="Lama Pinjam" value="<?php echo $row->Lama_pinjam ?>" autofocus>
+					
+			<br>
 		Status
-					<input type="text" name="Status" value="<?php echo $row->Status ?>" readonly><br>
+					<td><input class="form-control separuh" placeholder="Status" type="varchar" name="Status" value="<?php echo $row->Status ?>" autofocus>
+					
+			<br>
 		Tambahan
-					<input type="text" name="Tambahan" value="<?php echo $row->Tambahan ?>" readonly>
+					<td><input class="form-control separuh" placeholder="Tambahan" type="varchar" name="Tambahan" value="<?php echo $row->Tambahan ?>" autofocus>
+					
+			<br>
 					<br><br>
 	<?php } ?>
 
-<table border="1">
+<p align="center">
+			<table class="table table-striped">
 				<tr>
 				
 					<th>Nama Fasilitas</th>
@@ -60,14 +98,5 @@
 
 
 </body>
-<footer>
-    <div id="footer_bottom" class="footer-bottom footer">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="copyright">2014 © <a href="#">FormGet.com</a> All rights reserved.</div>
-</div>
-</div>
-</div>
-      </footer>
+
 </html>

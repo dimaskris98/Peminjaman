@@ -3,12 +3,14 @@
 		<title>List Mahasiswa</title>
 	</head>
 	<body>
+	<br>
 	<p align="center"><a href="<?php echo base_url()?>petugaskepala/input">+Tambah</a></p>
 		<br>
 		<div class="panel panel-default">
                         <div class="panel-heading">
                             </i>Data Petugas
 						</div>
+						<br>
 <form align="center" action="<?=site_url('petugaskepala/cari');?>" method = "post">
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" name="submit" />

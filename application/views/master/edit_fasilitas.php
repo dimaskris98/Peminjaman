@@ -5,6 +5,7 @@
 	
 </head>
 <body>
+<br>
 	<center>
 		<h3>Edit Data Fasilitas</h3>
 		
@@ -15,15 +16,17 @@
 		
 		<tr>
 				<td>ID_Fasilitas</td>
-				<td>
-					<input type="varchar" name="ID_Fasilitas" value="<?php echo $row->ID_Fasilitas ?>" readonly>
+				<td><input class="form-control separuh" placeholder="ID_Fasilitas" type="varchar" name="ID_Fasilitas" value="<?php echo $row->ID_Fasilitas ?>" autofocus>
+					
+			<br>
 				</td>
 		
 		</tr>
 			<tr>
 				<td>Nama Fasilitas</td>
-				<td>
-					<input type="char" name="Nama_Fasilitas" value="<?php echo $row->Nama_Fasilitas ?>">
+				<td><input class="form-control separuh" placeholder="Nama_Fasilitas" type="varchar" name="Nama_Fasilitas" value="<?php echo $row->Nama_Fasilitas ?>" autofocus>
+					
+			<br>
 				</td>
 			</tr>
 			
@@ -36,14 +39,5 @@
 	<?php } ?>
 
 </body>
-<footer>
-    <div id="footer_bottom" class="footer-bottom footer">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="copyright">2014 © <a href="#">FormGet.com</a> All rights reserved.</div>
-</div>
-</div>
-</div>
-      </footer>
+
 </html>
